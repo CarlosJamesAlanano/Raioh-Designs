@@ -289,6 +289,18 @@ img {
     padding-left: 8rem;
 }
 
+.abt .abt_img {
+  position: relative;
+  display: flex;
+  margin-top: 5rem;
+  justify-content: space-between;
+}
+
+.abt .abt_img img:hover{
+   scale: 1.1;
+   transition: 0.5s ease-in-out;
+}
+
 /* ---------------------------repeatable pattern--------------------------- */
 :root {
   --dark: #120f0a;
