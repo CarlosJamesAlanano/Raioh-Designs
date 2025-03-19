@@ -171,6 +171,38 @@ img {
     text-decoration: underline;
 }
 
+/* --------------------------banner-------------------------- */
+.banner{
+    padding-top: 13rem;
+    padding-bottom: 3rem;
+    min-height: 800px;
+    background: var(--brown);
+}
+
+.banner .banner_wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10rem;
+    align-items: center;
+}
+
+.banner .banner_text h1{
+    color: var(--light);
+    font-weight: bold;
+    font-size: clamp(1rem, 10vw, 6.5rem);
+    max-width: 50rem;
+}
+
+.banner .banner_text h1 span{
+    color: var(--primary);
+}
+
+.banner .banner_text p{
+    color: var(--light);
+    font-size: 1.5rem;
+    margin-top: 2rem;
+}
+
 /* ---------------------------repeatable pattern--------------------------- */
 :root{
     --dark:  #120f0a;
@@ -178,4 +210,13 @@ img {
     --primary:  #ffa700;
     --gray:  #312d26;
     --brown:  #262016;
+}
+
+.btn{
+    display: inline-block;
+    padding: 1.5rem 2rem;
+    border-radius: 5rem;
+    border: 1px solid var(--dark);
+    background-color: var(--primary);
+    color: var(--light);    
 }
