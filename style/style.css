@@ -125,6 +125,7 @@ img {
     position: fixed;
     width: 100%;
     background: transparent;
+    z-index: 9999;
 }
 
 .header .header_wrapper{
@@ -177,6 +178,20 @@ img {
     padding-bottom: 3rem;
     min-height: 800px;
     background: var(--brown);
+    position:relative;
+    z-index: 0;
+}
+
+.banner::after{
+    content: "";    
+    width: 80vw;
+    height: 800px;
+    display: block;
+    position: absolute;
+    background: var(--dark);
+    top: -25rem; 
+    right: 0;
+    clip-path: circle(50% at 72% 0);    
 }
 
 .banner .banner_wrapper{
