@@ -186,6 +186,12 @@ img {
     align-items: center;
 }
 
+.banner .banner_text {
+    padding-left: 11.5rem;
+    width: 100%;
+    border-radius: 1rem;
+}
+
 .banner .banner_text h1{
     color: var(--light);
     font-weight: bold;
@@ -199,8 +205,30 @@ img {
 
 .banner .banner_text p{
     color: var(--light);
-    font-size: 1.5rem;
-    margin-top: 2rem;
+    margin: 3rem 0;
+    max-width: 40rem;
+}
+
+.banner .banner_img{
+    position: relative;
+}   
+.banner .banner_img img{
+    position: relative;
+    z-index: 2;
+}   
+
+.banner .banner_img::after{
+    content: "";
+    width: 65rem;
+    height: 65rem;
+    border-radius: 50rem;
+    background-color: var(--gray);
+    opacity: 0.5;
+    position: absolute;
+    display: block;
+    top: -5rem;
+    right: 0rem;
+    z-index: 1;
 }
 
 /* ---------------------------repeatable pattern--------------------------- */
@@ -220,3 +248,10 @@ img {
     background-color: var(--primary);
     color: var(--light);    
 }
+
+.btn:hover{
+    background-color: transparent;
+    color: var(--light);
+    border: 1px solid var(--primary);
+}
+
