@@ -166,6 +166,11 @@ img {
     text-transform: uppercase;
 }
 
+.header .header_nav ul li a:hover{
+    color: var(--primary);
+    text-decoration: underline;
+}
+
 /* ---------------------------repeatable pattern--------------------------- */
 :root{
     --dark:  #120f0a;
