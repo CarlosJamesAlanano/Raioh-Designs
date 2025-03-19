@@ -369,7 +369,7 @@ img {
   left: 35rem;
   margin-top: 10rem;
   margin-bottom: 5rem;
-  font-size: clamp(1rem, 10vw, 2rem);
+  font-size: clamp(1rem, 10vw, 3rem);
   font-weight: bold;
   color: var(--primary);
   display: flex;
