@@ -1,15 +1,14 @@
 /* -------------RESETS------------- */
-/Resets are used for overwriting default html tag properties/
-*{
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
+/Resets are used for overwriting default html tag properties/ * {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
-  *:before,
-  *:after {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 html,
 body,
@@ -68,34 +67,34 @@ thead,
 tr,
 th,
 td {
-    border: 0;
-    font-family: inherit;
-    font-size: 100%;
-    font-style: inherit;
-    font-weight: inherit;
-    margin: 0;
-    outline: 0;
-    padding: 0;
-    vertical-align: baseline;
-    scroll-behavior: smooth;
-    scroll-padding-top: 5rem;
-    list-style: none;
+  border: 0;
+  font-family: inherit;
+  font-size: 100%;
+  font-style: inherit;
+  font-weight: inherit;
+  margin: 0;
+  outline: 0;
+  padding: 0;
+  vertical-align: baseline;
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+  list-style: none;
 }
 html {
-    font-size: 62.5%;
-    height: 100%;
+  font-size: 62.5%;
+  height: 100%;
 }
 body {
-    color: #2b2b2b;
-    font-family: "Poppins", sans-serif;
-    font-size: 1.6rem;
-    overflow-x: hidden;
-    line-height: 1.4;
-    background-color: var(--brown);
+  color: #2b2b2b;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.6rem;
+  overflow-x: hidden;
+  line-height: 1.4;
+  background-color: var(--brown);
 }
 table {
-    border-collapse: collapse;
-    border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 article,
 aside,
@@ -104,184 +103,212 @@ header,
 nav,
 section,
 time {
-    display: block;
+  display: block;
 }
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 img {
-    max-width: 100%;
+  max-width: 100%;
 }
 
 /* --------------------------container-------------------------- */
 .container {
-    max-width: 120rem;
-    margin: 0 auto;
-    padding: 1.5rem;
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 1.5rem;
 }
 
 /* --------------------------header-------------------------- */
 .header {
-    position: fixed;
-    width: 100%;
-    background: transparent;
-    z-index: 9999;
+  position: fixed;
+  width: 100%;
+  background: transparent;
+  z-index: 9999;
 }
 
-.header .header_wrapper{
-    display: flex;  
-    align-items: center;
-    justify-content: space-between;
+.header .header_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.header .branding{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 3rem;
+.header .branding {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
 }
 
-.header .branding h3{
-    color: var(--light);
-    font-size: 2.5rem;
-    font-weight: bold;
+.header .branding h3 {
+  color: var(--light);
+  font-size: 2.5rem;
+  font-weight: bold;
 }
 
-.header .header_nav ul{
-    display: flex;
-    align-items: center;
-    gap: 3rem;   
+.header .header_nav ul {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
 }
 
-.header .bilog{
-    width: 5rem;
-    height: 5rem;
-    background-color: var(--primary);
-    border-radius: 20rem;
+.header .bilog {
+  width: 5rem;
+  height: 5rem;
+  background-color: var(--primary);
+  border-radius: 20rem;
 }
 
-.header .header_nav ul li a{
-    color: var(--light);
-    font-size: 1.6rem;
-    font-weight: 500;
-    text-transform: uppercase;
+.header .header_nav ul li a {
+  color: var(--light);
+  font-size: 1.6rem;
+  font-weight: 500;
+  text-transform: uppercase;
 }
 
-.header .header_nav ul li a:hover{
-    color: var(--primary);
-    text-decoration: underline;
+.header .header_nav ul li a:hover {
+  color: var(--primary);
+  text-decoration: underline;
 }
 
 /* --------------------------banner-------------------------- */
-.banner{
-    padding-top: 13rem;
-    padding-bottom: 3rem;
-    min-height: 800px;
-    background: var(--brown);
-    position:relative;
-    z-index: 0;
+.banner {
+  padding-top: 13rem;
+  padding-bottom: 3rem;
+  min-height: 800px;
+  background: var(--brown);
+  position: relative;
+  z-index: 0;
 }
 
-.banner::after{
-    content: "";    
-    width: 80vw;
-    height: 800px;
-    display: block;
-    position: absolute;
-    background: var(--dark);
-    top: -25rem; 
-    right: 0;
-    clip-path: circle(50% at 72% 0);    
+.banner::after {
+  content: "";
+  width: 80vw;
+  height: 800px;
+  display: block;
+  position: absolute;
+  background: var(--dark);
+  top: -25rem;
+  right: 0;
+  clip-path: circle(50% at 72% 0);
 }
 
-.banner::before{
-    content: "Contact Us";
-    color: var(--light);
-    background: var(--primary);    
-    padding: 1rem 2rem;
-    position: absolute;
-    right: -4rem;
-    top:25rem;
-    border-top-left-radius: 1rem;
-    border-top-right-radius: 1rem;
-    z-index: 15;
-    transform: rotate(-90deg);
-    width: 12rem;
+.banner::before {
+  content: "Contact Us";
+  color: var(--light);
+  background: var(--primary);
+  padding: 1rem 2rem;
+  position: absolute;
+  right: -4rem;
+  top: 25rem;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  z-index: 15;
+  transform: rotate(-90deg);
+  width: 12rem;
 }
 
-.banner .banner_wrapper{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 10rem;
-    align-items: center;
+.banner .banner_wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10rem;
+  align-items: center;
 }
 
 .banner .banner_text {
-    padding-left: 11.5rem;
-    width: 100%;
-    border-radius: 1rem;
+  padding-left: 11.5rem;
+  width: 100%;
+  border-radius: 1rem;
 }
 
-.banner .banner_text h1{
+.banner .banner_text h1 {
+  color: var(--light);
+  font-weight: bold;
+  font-size: clamp(3rem, 10vw, 6.5rem);
+  max-width: 50rem;
+}
+
+.banner .banner_text h1 span {
+  color: var(--primary);
+}
+
+.banner .banner_text p {
+  color: var(--light);
+  margin: 3rem 0;
+  max-width: 40rem;
+}
+
+.banner .banner_img {
+  position: relative;
+}
+.banner .banner_img img {
+  position: relative;
+  z-index: 2;
+}
+
+.banner .banner_img::after {
+  content: "";
+  width: 65rem;
+  height: 65rem;
+  border-radius: 50rem;
+  background-color: var(--gray);
+  opacity: 0.5;
+  position: absolute;
+  display: block;
+  top: -5rem;
+  right: 0rem;
+  z-index: 1;
+}
+
+/* --------------------------about-------------------------- */
+.abt {
+  padding: 5rem 0;
+  background: var(--brown);
+}
+
+.abt .abt_wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 5rem;
+}
+
+.abt p{
     color: var(--light);
-    font-weight: bold;
-    font-size: clamp(1rem, 10vw, 6.5rem);
-    max-width: 50rem;
+    text-align: justify;   
+    margin-bottom: 3rem;
 }
 
-.banner .banner_text h1 span{
+.abt a{
+    width: fit-content
+}
+
+.abt h3{
     color: var(--primary);
-}
-
-.banner .banner_text p{
-    color: var(--light);
-    margin: 3rem 0;
-    max-width: 40rem;
-}
-
-.banner .banner_img{
-    position: relative;
-}   
-.banner .banner_img img{
-    position: relative;
-    z-index: 2;
-}   
-
-.banner .banner_img::after{
-    content: "";
-    width: 65rem;
-    height: 65rem;
-    border-radius: 50rem;
-    background-color: var(--gray);
-    opacity: 0.5;
-    position: absolute;
-    display: block;
-    top: -5rem;
-    right: 0rem;
-    z-index: 1;
+    font-size: clamp(2rem, 10vw, 4rem);
+    font-weight: bold;
+    padding-left: 8rem;
 }
 
 /* ---------------------------repeatable pattern--------------------------- */
-:root{
-    --dark:  #120f0a;
-    --light:  #fff;
-    --primary:  #ffa700;
-    --gray:  #312d26;
-    --brown:  #262016;
+:root {
+  --dark: #120f0a;
+  --light: #fff;
+  --primary: #ffa700;
+  --gray: #312d26;
+  --brown: #262016;
 }
 
-.btn{
-    display: inline-block;
-    padding: 1.5rem 2rem;
-    border-radius: 5rem;
-    border: 1px solid var(--dark);
-    background-color: var(--primary);
-    color: var(--light);    
+.btn {
+  display: inline-block;
+  padding: 1.5rem 2rem;
+  border-radius: 5rem;
+  border: 1px solid var(--dark);
+  background-color: var(--primary);
+  color: var(--light);
 }
 
-.btn:hover{
-    background-color: transparent;
-    color: var(--light);
-    border: 1px solid var(--primary);
+.btn:hover {
+  background-color: transparent;
+  color: var(--light);
+  border: 1px solid var(--primary);
 }
-
