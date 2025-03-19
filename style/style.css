@@ -1,0 +1,176 @@
+/* -------------RESETS------------- */
+/Resets are used for overwriting default html tag properties/
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+  *:before,
+  *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+font,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+    border: 0;
+    font-family: inherit;
+    font-size: 100%;
+    font-style: inherit;
+    font-weight: inherit;
+    margin: 0;
+    outline: 0;
+    padding: 0;
+    vertical-align: baseline;
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+    list-style: none;
+}
+html {
+    font-size: 62.5%;
+    height: 100%;
+}
+body {
+    color: #2b2b2b;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.6rem;
+    overflow-x: hidden;
+    line-height: 1.4;
+    background-color: var(--brown);
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+article,
+aside,
+footer,
+header,
+nav,
+section,
+time {
+    display: block;
+}
+a {
+    text-decoration: none;
+}
+img {
+    max-width: 100%;
+}
+
+/* --------------------------container-------------------------- */
+.container {
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: 1.5rem;
+}
+
+/* --------------------------header-------------------------- */
+.header {
+    position: fixed;
+    width: 100%;
+    background: transparent;
+}
+
+.header .header_wrapper{
+    display: flex;  
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header .branding{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+.header .branding h3{
+    color: var(--light);
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.header .header_nav ul{
+    display: flex;
+    align-items: center;
+    gap: 3rem;   
+}
+
+.header .bilog{
+    width: 5rem;
+    height: 5rem;
+    background-color: var(--primary);
+    border-radius: 20rem;
+}
+
+.header .header_nav ul li a{
+    color: var(--light);
+    font-size: 1.6rem;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+/* ---------------------------repeatable pattern--------------------------- */
+:root{
+    --dark:  #120f0a;
+    --light:  #fff;
+    --primary:  #ffa700;
+    --gray:  #312d26;
+    --brown:  #262016;
+}
