@@ -272,21 +272,21 @@ img {
   grid-gap: 5rem;
 }
 
-.abt p{
-    color: var(--light);
-    text-align: justify;   
-    margin-bottom: 3rem;
+.abt p {
+  color: var(--light);
+  text-align: justify;
+  margin-bottom: 3rem;
 }
 
-.abt a{
-    width: fit-content
+.abt a {
+  width: fit-content;
 }
 
-.abt h3{
-    color: var(--primary);
-    font-size: clamp(2rem, 10vw, 4rem);
-    font-weight: bold;
-    padding-left: 8rem;
+.abt h3 {
+  color: var(--primary);
+  font-size: clamp(2rem, 10vw, 4rem);
+  font-weight: bold;
+  padding-left: 8rem;
 }
 
 .abt .abt_img {
@@ -296,9 +296,9 @@ img {
   justify-content: space-between;
 }
 
-.abt .abt_img img:hover{
-   scale: 1.1;
-   transition: 0.5s ease-in-out;
+.abt .abt_img img:hover {
+  scale: 1.1;
+  transition: 0.5s ease-in-out;
 }
 
 /* -------------------------------programs------------------------------- */
@@ -339,27 +339,66 @@ img {
   gap: 2rem;
 }
 
-.programs .programs_wrapper .programs_p p{
-    color: var(--light);
-    text-align: justify;
+.programs .programs_wrapper .programs_p p {
+  color: var(--light);
+  text-align: justify;
 }
 
-.programs .programs_wrapper .programs_p .p_bold{
-    color: var(--light);
-    font-weight: bold;
-    font-size: 1.5rem;
+.programs .programs_wrapper .programs_p .p_bold {
+  color: var(--light);
+  font-weight: bold;
+  font-size: 1.5rem;
 }
 
-.programs .programs_wrapper .programs_p .p_bold1{
-    color: var(--light);
-    font-weight: bold;
-    font-size: 1.5rem;
-    margin-bottom: 3rem;  
+.programs .programs_wrapper .programs_p .p_bold1 {
+  color: var(--light);
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-bottom: 3rem;
 }
 
-.programs .programs_wrapper .programs_p a{
-    width: fit-content;
+.programs .programs_wrapper .programs_p a {
+  width: fit-content;
 }
+
+/* ------------------------------events---------------------------- */
+
+.events .events_wrapper .events_text {
+  position: relative;
+  left: 35rem;
+  margin-top: 10rem;
+  margin-bottom: 5rem;
+  font-size: clamp(1rem, 10vw, 2rem);
+  font-weight: bold;
+  color: var(--primary);
+  display: flex;
+}
+
+.events .events_wrapper .events_photos {
+  width: 25rem;
+  margin-left: 5rem;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  display: flex;
+  align-content: space-between;
+  gap: 6.5rem;
+  margin-left: 35rem;
+  align-items: center;
+}
+
+.events .events_wrapper {
+  width: 100%;
+  height: 100%;
+  background: var(--gray);
+  border-top-right-radius: 9rem;
+  position: absolute;
+  left: 0;
+  max-height: 70rem;
+}
+
+.events .events_wrapper .events_photos img {
+}
+
 /* ---------------------------repeatable pattern--------------------------- */
 :root {
   --dark: #120f0a;
