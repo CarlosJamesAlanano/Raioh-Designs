@@ -380,6 +380,10 @@ img {
 }
 
 @media screen and (max-width: 500px) {
+  .abt{
+    padding: 0;
+  }
+
   .abt .abt_wrapper {
     display: grid;
     grid-template-columns: 1fr;
@@ -388,14 +392,19 @@ img {
 
   .abt .abt_img {
     display: grid;
-    grid-template-columns: 1fr;
-    justify-self: center;
-    grid-gap: 2rem;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
   }
 
   .abt h3 {
     padding-left: 0;
     text-align: center;
+  }
+
+  .abt .abt_action a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
 
@@ -468,6 +477,7 @@ img {
     display: grid;
     grid-template-columns: 1fr;
     gap: 2rem;
+    margin-bottom: 5rem;
   }
 
   .programs .programs_wrapper .programs_text {
@@ -709,10 +719,9 @@ img {
 
 @media screen and (max-width: 500px){
   .footer .footer_details{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
   }
 .footer .footer_text{
     display: flex;
@@ -720,6 +729,13 @@ img {
     align-items: center;
     justify-content: center;
     gap: 1rem;
+  }
+
+  .footer .footer_input{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 
   .footer .footer_text h6{
@@ -736,9 +752,17 @@ img {
     margin: 0 auto;
   }
 
-  .footer .footer_input input{
-    width: 100%;
+  .footer .footer_input h3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
+
+  .footer .footer_input input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
   .footer .footer_input form a i{
     transform: translateX(-5rem);
@@ -795,8 +819,9 @@ img {
 
 @media screen and (max-width:500px){
   .btn{
-    width: 80% !important;
+    width: 90% !important;
     text-align: center !important; 
     margin: 0 auto !important;
+    align-content: center !important;
   }
 }
