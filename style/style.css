@@ -574,21 +574,21 @@ img {
   background: var(--brown);
 }
 
-.footer .footer_details{
+.footer .footer_details {
   display: flex;
   align-items: center;
   justify-content: space-between;
   border-bottom: 1px solid var(--light);
 }
 
-.footer .footer_input h3{
+.footer .footer_input h3 {
   color: var(--primary);
   font-size: clamp(1.5rem, 10vw, 3.5rem);
   font-weight: bold;
   margin-bottom: 2rem;
 }
 
-.footer .footer_input form{
+.footer .footer_input form {
   display: flex;
   align-items: center;
   gap: 1rem;
@@ -602,7 +602,7 @@ img {
   transform: translateX(-5rem);
 }
 
-.footer .footer_input input{
+.footer .footer_input input {
   width: 40rem;
   padding: 1.5rem 5rem 1.5rem 2rem;
   border-radius: 5rem;
@@ -611,23 +611,23 @@ img {
   color: var(--light);
 }
 
-.footer .footer_input input::placeholder{
+.footer .footer_input input::placeholder {
   color: var(--light);
 }
 
-.footer .footer_input input:focus{
+.footer .footer_input input:focus {
   outline: none;
   border: none;
 }
 
-.footer .footer_text h6, .footer .footer_text p{
+.footer .footer_text h6,
+.footer .footer_text p {
   color: var(--light);
   max-width: 25rem;
   text-align: right;
-  
 }
 
-.footer .footer_text h4{
+.footer .footer_text h4 {
   color: var(--primary);
   font-size: 3rem;
   font-weight: bold;
@@ -635,7 +635,7 @@ img {
   margin: 1rem 0 1rem 0;
 }
 
-.footer .nav{
+.footer .nav {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -653,13 +653,13 @@ img {
   margin-top: 3rem;
 }
 
-.footer .footer_nav a{
+.footer .footer_nav a {
   color: var(--light);
   font-weight: bold;
-  transition: 0.5s ease;  
+  transition: 0.5s ease;
 }
 
-.footer .footer_nav a:hover{
+.footer .footer_nav a:hover {
   color: var(--primary);
   transition: 0.5s ease;
   text-decoration: underline;
@@ -674,7 +674,7 @@ img {
   margin-top: 3rem;
 }
 
-.footer .footer_social i{
+.footer .footer_social i {
   display: flex;
   justify-content: center;
   background: var(--primary);
@@ -696,16 +696,59 @@ img {
   border-radius: 10rem;
 }
 
-@media screen and (max-width:500px){
-  .footer .footer_input {
+@media screen and (max-width: 500px){
+  .footer .footer_details{
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 2rem;
+    justify-content: center;
   }
+.footer .footer_text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .footer .footer_text h6{
+    align-self: center;
+    text-align: center;
+  }
+
+  .footer .footer_input form{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .footer .footer_input input{
+    width: 100%;
+  }
+
+  .footer .footer_input form a i{
+    transform: translateX(-5rem);
 }
 
+  .footer .nav{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
 
+  .footer .footer_nav{
+    display: flex;
+    justify-content: center;
+  }
+
+  .footer .footer_social{
+    display: flex;
+    justify-content: center;
+  }
+}
 
 /* ---------------------------repeatable pattern--------------------------- */
 :root {
