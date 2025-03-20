@@ -367,6 +367,23 @@ img {
 
 /* ------------------------------events---------------------------- */
 
+.events {
+  padding: 0;
+  background: var(--gray);
+  border-top-right-radius: 20rem;
+}
+
+.events h3 {
+  color: var(--primary);
+  font-size: clamp(1.5rem, 10vw, 3.5rem);
+  margin-bottom: 5rem;
+}
+
+.events .events_wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 5rem;
+}
 
 
 /* ---------------------------repeatable pattern--------------------------- */
