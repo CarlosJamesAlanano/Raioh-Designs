@@ -197,21 +197,18 @@ img {
   position: relative;
 }
 
-
-
-.banner::before {
-  content: "Contact Us";
+.banner .contact_us{
   color: var(--light);
   background: var(--primary);
   padding: 1rem 2rem;
-  position: fixed;
-  right: -4rem;
+  position: absolute;
+  right: -38rem;
   top: 25rem;
   border-top-left-radius: 1rem;
   border-top-right-radius: 1rem;
   z-index: 15;
   transform: rotate(-90deg);
-  width: 12rem;
+  width: fit-content;
 }
 
 .banner .banner_wrapper {
