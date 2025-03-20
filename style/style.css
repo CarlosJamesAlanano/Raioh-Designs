@@ -179,6 +179,17 @@ img {
   .header .header_nav{
     display: none;
   }
+  .header .bilog{
+    display: none;
+  }
+  .header .branding{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin: 0 auto;
+    background: var(--gray);
+    padding: 1rem;
+    border-radius: 3rem;
+  }
 }
 /* --------------------------banner-------------------------- */
 .banner {
