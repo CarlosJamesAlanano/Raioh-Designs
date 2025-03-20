@@ -233,6 +233,7 @@ img {
   font-weight: bold;
   font-size: clamp(3rem, 10vw, 6.5rem);
   max-width: 50rem;
+  line-height: 6rem;
 }
 
 .banner .banner_text h1 span {
@@ -243,6 +244,7 @@ img {
   color: var(--light);
   margin: 3rem 0;
   max-width: 40rem;
+  text-align: justify;
 }
 
 .banner .banner_img {
@@ -367,6 +369,7 @@ img {
 
 .programs .programs_wrapper .programs_p a {
   width: fit-content;
+  margin-bottom: 7rem;
 }
 
 /* ------------------------------events---------------------------- */
@@ -381,6 +384,8 @@ img {
   color: var(--primary);
   font-size: clamp(1.5rem, 10vw, 3.5rem);
   margin-bottom: 5rem;
+  margin-top: 5rem;
+  font-weight: bold;
 }
 
 .events .events_wrapper {
@@ -390,7 +395,7 @@ img {
 }
 
 .events .events_cards{
-  background: var(--light);
+  background: #d9d9d9;
   border-radius: 2rem;
   max-height: 50rem;
   overflow: hidden;
@@ -430,6 +435,7 @@ img {
 }
 
 .events .events_card:hover .events_text{
+  border-radius: 2rem;
   transform: translateY(50%);
 }
 
@@ -456,5 +462,11 @@ img {
   background-color: transparent;
   color: var(--light);
   border: 1px solid var(--primary);
+  scale: 1.1;
   transition: 0.5s ease;
+}
+
+.btn.bg-primary {
+  background-color: var(--primary);
+  color: var(--light);
 }
