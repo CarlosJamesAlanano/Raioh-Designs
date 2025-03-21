@@ -175,20 +175,47 @@ img {
   text-decoration: underline;
 }
 
+.header .toggle_menu {
+  display: none;
+}
+
+.header .toggle_menu span {
+  width: 3rem;
+  height: 0.3rem;
+  background-color: var(--primary);
+  display: block;
+  border-radius: 5rem;
+}
+
+.header .toggle_menu span:nth-child(2) {
+  margin: 0.5rem 0;
+}
+
 @media screen and (max-width: 500px) {
   .header .header_nav {
-    display: none;
+    background: var(--brown);
+    position: absolute;
+    right: -100rem;
+    width: 100%;
+    top: 13rem;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
+
   .header .bilog {
     display: none;
   }
-  .header .branding {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    margin: 0 auto;
-    background: var(--gray);
-    padding: 1rem;
-    border-radius: 3rem;
+
+  .header .header_nav ul {
+    display: flex;
+    flex-direction: column;
+    transform: translateY(-10rem);
+  }
+
+  .header .toggle_menu {
+    display: unset;
   }
 }
 /* --------------------------banner-------------------------- */
