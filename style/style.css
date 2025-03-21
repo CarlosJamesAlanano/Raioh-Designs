@@ -191,6 +191,11 @@ img {
   margin: 0.5rem 0;
 }
 
+.header .header_nav.open{
+  right:0;
+  transition: 0.5s ease;
+}
+
 @media screen and (max-width: 500px) {
   .header .header_nav {
     background: var(--brown);
@@ -202,6 +207,7 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: 0.5s ease;
   }
 
   .header .bilog {
@@ -464,6 +470,16 @@ img {
   width: 25rem;
 }
 
+.programs .programs_wrapper .programs_text #pic1 {
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+}
+
+.programs .programs_wrapper .programs_text #pic2 {
+  border-bottom-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+}
+
 .programs .programs_wrapper .programs_p {
   margin-top: 5.5rem;
   display: flex;
@@ -670,6 +686,7 @@ img {
   color: var(--light);
   max-width: 25rem;
   text-align: right;
+  margin-bottom: 3rem;
 }
 
 .footer .footer_text h4 {
