@@ -121,7 +121,7 @@ img {
 
 /* --------------------------header-------------------------- */
 .header {
-  position: absolute;
+  position: fixed;
   width: 100%;
   background: transparent;
   z-index: 9999;
@@ -226,12 +226,16 @@ img {
 }
 
 @media screen and (max-width: 500px) {
+  .header {
+    background: var(--brown);
+  }
+  
   .header .header_nav {
     background: var(--brown);
     position: absolute;
     right: -100rem;
     width: 100%;
-    top: 13rem;
+    top: 12rem;
     height: 100vh;
     display: flex;
     align-items: center;
@@ -254,6 +258,96 @@ img {
     display: unset;
   }
 }
+
+/* -----------------------------contact_us----------------------------- */
+.contacts{
+  position:relative;
+  z-index: 9999999;
+
+}
+
+.contacts .contact_button{
+  cursor: pointer;
+  display: inline-block;
+  position: fixed;
+  background-color: var(--primary);
+  padding: 1rem;
+  transform: rotate(-90deg);
+  top: 30rem;
+  right:-3.5rem;
+  border-top-left-radius: 1.5rem;
+  border-top-right-radius: 1.5rem;
+}
+
+.contacts .contact_button span{
+  color: var(--light);
+}
+
+.contacts .contact_button.open {
+  top: 25.8rem;
+  right: 42rem;
+  z-index: -999;
+}
+
+.contacts .contact_button.open span{
+  color: var(--light);
+}
+
+.contacts .contact_forms{
+  position: fixed;
+  right: -100%;
+  padding: 2rem;
+  color: var(--dark);
+  display: flex;
+  top: 21rem; 
+  width: 43rem;
+  flex-direction: column;
+  z-index: 9999999999;    
+}
+
+.contacts .contact_forms.open{
+  right: 0;
+}
+
+.contacts .contact_forms form{
+  padding: 2rem;
+  background-color: var(--light); 
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 40rem; 
+  border-bottom-left-radius: 1.5rem;
+  border-bottom-right-radius: 1.5rem;
+  border-top-right-radius: 1.5rem;
+}
+
+.contacts .contact_forms form h2{
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.contacts .contact_forms form input, 
+.contacts .contact_forms form textarea{
+  background-color: #D9D9D9;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 2rem;
+  width:90%;
+}
+
+.contacts .contact_forms form textarea{
+  height: 15rem;
+  resize: none; 
+}
+
+.contacts .contact_forms--btn{
+  text-align: right;
+}
+
+@media screen and (max-width: 500px) {
+  
+}
+
 /* --------------------------banner-------------------------- */
 .banner {
   padding-top: 13rem;
@@ -280,7 +374,7 @@ img {
   position: relative;
 }
 
-.banner .contact_us {
+/* .banner .contact_us {
   color: var(--light);
   background: var(--primary);
   padding: 1rem 2rem;
@@ -292,7 +386,7 @@ img {
   z-index: 15;
   transform: rotate(-90deg);
   width: fit-content;
-}
+} */
 
 .banner .banner_wrapper {
   display: grid;
@@ -391,11 +485,6 @@ img {
   .banner .banner_text p {
     margin: 0 auto;
   }
-
-  .banner .contact_us {
-    right: -5rem;
-    top: 0;
-  }
 }
 
 /* --------------------------about-------------------------- */
@@ -445,12 +534,9 @@ img {
 
 @media screen and (max-width: 500px) {
   .abt {
-    padding: 0;
+    padding: 2rem;
   }
 
-  .abt p {
-
-  }
 
   .abt .abt_wrapper {
     display: grid;
@@ -566,11 +652,11 @@ img {
   }
 
   .programs .programs_wrapper .programs_text h3 {
-    font-size: clamp(1rem, 10vw, 2rem);
+    font-size: 2rem;
   }
 
   .programs .programs_wrapper .programs_text h2 {
-    font-size: clamp(2rem, 50vw, 3.5rem);
+    font-size: 3.5rem;
   }
 
   .programs .programs_wrapper .programs_text img {
@@ -579,6 +665,9 @@ img {
 
   .programs .programs_wrapper .programs_p {
     margin-top: 2rem;
+    display: flex;
+    justify-self: center;
+    max-width: 40rem;
   }
 
   .programs .programs_wrapper .programs_p .p_bold1 {
@@ -661,7 +750,9 @@ img {
   .events .events_wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    justify-self: center;
     gap: 2rem;
+    max-width: 40rem;
   }
 }
 
