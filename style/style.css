@@ -449,13 +449,13 @@ img {
 
 .programs .programs_wrapper .programs_text h3 {
   color: var(--primary);
-  font-size: clamp(1rem, 10vw, 2rem);
+  font-size: 2rem;
   font-weight: bold;
 }
 
 .programs .programs_wrapper .programs_text h2 {
   color: var(--light);
-  font-size: clamp(2rem, 50vw, 3.5rem);
+  font-size: 3.5rem;
   font-weight: bold;
   max-width: 40rem;
 }
